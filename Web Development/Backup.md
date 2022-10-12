@@ -38,7 +38,9 @@ TDRL Server's IP and PPK files can be found in `Prject Attachments` as shown bel
 
 ### Step 4: Setup `backup` repository using SSH Terminal
 1. Download the package in ELB
+```
 sudo yum install https://fastdl.mongodb.org/tools/db/mongodb-database-tools-amazon2-x86_64-100.5.0.rpm
+```
 Once downloaded, it will ask if you want to install or not, enter y to continue
 2. Log into git
 ```
