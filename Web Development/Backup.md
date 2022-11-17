@@ -65,7 +65,7 @@ Set `GOOGLE_FOLDER_ID` to `1pkytAHFw-5PexV6pM2t4mGVf95YXWT1m`
 
 Set `DATABASE_NAME` to `RB-VENDOR`
 
-Set `EMAIL_TEMPLATE_ID` to `d-69d20067e57f4a6d8a35116015ac616e`
+Set `EMAIL_TEMPLATE_ID` to `d-13ac633472ff49deab34104ce4fd9e87`
 
 Press `Esc` keyboard button. 
 
