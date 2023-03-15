@@ -37,6 +37,17 @@ TDRL Server's IP and PPK files can be found in `Prject Attachments` as shown bel
 8. Once you are logged in, then you need to setup TDRL backup package. To do that, continue reading...
 
 ### Step 4: Setup `backup` repository using SSH Terminal
+0. Setup cron ([More about cron-jon](https://www.freecodecamp.org/news/cron-jobs-in-linux/))
+```
+crontab –e
+```
+then enter the following command
+```
+01 18 * * * /home/ec2-user/g-drive-backup/utils/backup.sh
+```
+Press `Esc` keyboard button. 
+
+Enter `:wq` in the terminal and press `Enter`.
 1. Download the package in ELB
 ```
 sudo yum install https://fastdl.mongodb.org/tools/db/mongodb-database-tools-amazon2-x86_64-100.5.0.rpm
@@ -78,15 +89,8 @@ cd utils
 chmod u+x /home/ec2-user/g-drive-backup/utils/backup.sh
 cd ../../
 ```
-
-7. Setup cron ([More about cron-jon](https://www.freecodecamp.org/news/cron-jobs-in-linux/))
+### To take backup manually at any time, run the following command
+Note: The following command must run from the 
 ```
-crontab –e
+bash /home/ec2-user/g-drive-backup/utils/backup.sh
 ```
-then enter the following command
-```
-01 18 * * * /home/ec2-user/g-drive-backup/utils/backup.sh
-```
-Press `Esc` keyboard button. 
-
-Enter `:wq` in the terminal and press `Enter`.
